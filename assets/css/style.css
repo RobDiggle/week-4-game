@@ -1,0 +1,17 @@
+body{
+background-image: url("../images/city1.jpeg");
+background-repeat: no-repeat;
+background-position: center;
+color:darkslategrey;
+
+}
+
+
+
+.name{
+	color:;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+
+}

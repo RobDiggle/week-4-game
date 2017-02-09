@@ -3,51 +3,60 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Crystal Collector</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>City destroyer</title>
+
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 </head>
+
 <body>
-	<div class="header">
-		<h1>Crystal Collector</h1>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+<embed src="assets/theme.mp3" autostart="true" loop="true" height="0" width="0"></embed>
+
+
+	<div class="name">
+		<h1>City destroyer</h1>
 	</div>
-	<div class="instructions">
-		<h3>Game instructions</h3>
-		</br>
-			<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
-			</p>
-			<p>You win the game by matching your total score to the random number.
-			You lose the game if your total score goes above the random number.
-			</p>
-			<p>The value of each crystal is hidden from you until you click on it.
-			Each time when the game starts, the game will change the values of each crystal.
-			</p>
+
+		<h4>How to play:</h4>
+			<p>There are four monsters below. By clicking on a monster, you will add a specific amount of destruction points to your total destruction score. You destroy the city, and win the game, by matching your total destruction score to the given number below. You lose the game if your total score goes above the given number below. The destructive power (represented through numbered score) of each monster is hidden from you until you click on it.Each time when the game starts, the game will change the power of each monster.
+			
 	</div>
 	<div class="numberToMatch">
-		<h2>Number To Get:
-			<span id= "randomNumber"></span>
+		<h2>Given number:
+			<div id= "randomNumber"></div>
 		</h2>
+	</div>
 	</div>
 	<div class="winsAndLosses">
-		<h2>Wins:
-			<span id= "numberWins"></span>
+		<h2>Cities destroyed:
+			<div id= "winCo"></div>
 			</br>
-			Losses: 
-			<span id= "numberLosses"></span>
+			Cities not destroyed: 
+			<div id= "lossCo"></div>
+
+	<div class="monsters">
+
+		<img src="assets/images/ang1.jpg" height="145" width="250" id="one"/>
+
+		<img src="assets/images/kong2.png" height="145" width="250" id="two"/>
+
+		<img src="assets/images/zilla1.jpg" height="145" width="250" id= "three"/>
+
+		<img src="assets/images/ghid1.jpg" height="145" width="250" id= "four"/>
+
+	</div>
+
+	<div class="destruction">
+		<h2>Destruction score so far:
+			<div id="destructionTally"></div>
 		</h2>
 	</div>
-	<div class="gems">
-		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
-		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
-		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
-		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
-	</div>
-	<div class="userTotal">
-		<h2>Your total score is:
-			<span id="finalTotal"></span>
-		</h2>
-	</div>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
 </body>
 </html>
